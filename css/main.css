@@ -1,0 +1,149 @@
+
+.contan{
+    background-color: #181818;
+}
+.contan h2{
+    color: #fff;
+    font-size: 1.3125rem;
+    font-weight: 600;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    line-height: 1.16667em;
+    padding: 24px;
+    margin-bottom: auto;
+}
+
+/* body code start here */
+.cont-grey{
+    background-color: #262626;
+}
+.agenda{
+    color: #fff;
+    padding-top: 55px;
+    padding-left: 32px;
+    font-size: 2.125rem;
+    font-weight: 400;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    line-height: 1.20588em;
+}
+.day-one{
+    margin: 40px 0;
+}
+.day-one h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    line-height: 1.35417em;
+    padding-left: 32px;
+}
+.day-one h3{
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    padding-bottom: 56px;
+    padding-left: 32px;
+}
+.cont-gray{
+    position: relative;
+    background-color: #2C2C2C;
+}
+.bord{
+    border-right: 1px solid #fff;
+    color: #e57a00;
+    padding: 24px 0;
+    text-align: center;
+}
+.activity{
+    color: #fff;
+    padding: 24px 0;
+    cursor: pointer;
+}
+.author-img{
+    flex: 0 0 64px;
+    max-height: 64px;
+    margin: 24px;
+}
+.author-img img{
+    filter: grayscale(100%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.growth{
+    padding: 24px 0;
+    cursor: pointer;
+}
+
+
+.day-two{
+    padding: 80px 0;
+}
+.day-two h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    line-height: 1.35417em;
+    padding-left: 32px;
+}
+.day-two h3{
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-family: "Merriweather", serif;
+    padding-bottom: 56px;
+    padding-left: 32px;
+}
+
+.author-description h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    line-height: 1.35417em;
+    padding-left: 0;
+}
+.author-description h3{
+    font-style: normal;
+    font-family: "Merriweather", serif;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.pope{
+    display: none;
+    z-index: 999999999999;
+    position: fixed;
+    background-color: #424242;
+    padding: 20px;
+   
+    
+}
+.pope h2{
+    color: #fff;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    font-style: normal;
+}
+.pope h3{
+    padding-bottom: 0px;
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 1rem;
+}
+.pope p{
+    padding: 0 10px;
+    color: #fff;
+}
+
+.close{
+    color: #bbbbbb;
+    font-size: 24px;
+    float: right;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.close:hover{
+    cursor: pointer;
+    border-radius: 50%;
+   background-color: rgb(255, 255, 255, 0.3);
+}
