@@ -1,20 +1,31 @@
-// function myfunction(){
-//     document.getElementById("pope").style.display="block";
-// }
-$(document).ready(function(){
-    $(".activity").click(function(){
-        //$(this).parent().find(".pope").center()
-        $(this).parent().find(".pope").css({ "display": "block", "z-inde":99999999999});
-        $(this).parent().find(".pope").css({
-            top: (($(window).height()  - $(".modal-box").outerHeight()) / 2) + "px"
-        });
-       
-        console.log($(this))
-        $("body").css({"overflow": "hidden", "z-index":-1});
+$(document).ready(function () {
+    $(".activity-name").click(function () {
+        $('.detail').empty();
+        var $popdata = $(this).siblings('.detail-content').clone();
+        $('.detail').html($popdata);
+        $(".detail").addClass("active");
+        $("body").css({"overflow":"hidden"});
+        console.log($popdata);
     });
-    $(".close").click(function(){
-        $(".pope").css({ "display": "none"});
-        $("body").css({"overflow": "auto"});
-    });
-});
 
+    $(document).on('click', '.close', function () {
+        console.log("click")
+        $('.detail').removeClass("active");
+        $("body").css({"overflow":"scroll"});
+    });
+
+    $(document).on('click', 'body', function () {
+        $(this).removeClass('active');
+    });
+
+    $(document).click(function (e) {
+        if (!$(e.target).hasClass("activity-name") 
+            && $(e.target).parents(".detail").length === 0) 
+        {
+            $(".detail").removeClass("active");
+            $("body").css({"overflow":"scroll"});
+        }
+    });
+
+    
+});

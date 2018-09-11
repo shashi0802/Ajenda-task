@@ -1,62 +1,125 @@
-
-.contan{
-    background-color: #181818;
+body{
+    background-color: #212121;
 }
-.contan h2{
-    color: #fff;
-    font-size: 1.3125rem;
+.bg{
+    background-color: #111111;
+    padding: 10px 40px;
+    color: #ffffff;
+}
+.backcol{
+    background-color: #212121;
+}
+.main{
+    color: #ffffff;
+}
+.main h1{
+    padding: 32px;
+}
+
+.day{
+    padding: 32px 32px 80px 32px;
+}
+.day h1{
+    padding: 0px;
+    margin-bottom: 0;
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-    line-height: 1.16667em;
-    padding: 24px;
-    margin-bottom: auto;
-}
-
-/* body code start here */
-.cont-grey{
-    background-color: #262626;
-}
-.agenda{
-    color: #fff;
-    padding-top: 55px;
-    padding-left: 32px;
-    font-size: 2.125rem;
-    font-weight: 400;
-    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-    line-height: 1.20588em;
-}
-.day-one{
-    margin: 40px 0;
-}
-.day-one h1{
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 2px;
     line-height: 1.35417em;
-    padding-left: 32px;
 }
-.day-one h3{
+.day h3{
     color: rgba(255, 255, 255, 0.7);
     font-style: italic;
     font-family: "Merriweather", serif;
-    padding-bottom: 56px;
-    padding-left: 32px;
-}
-.cont-gray{
-    position: relative;
-    background-color: #2C2C2C;
-}
-.bord{
-    border-right: 1px solid #fff;
-    color: #e57a00;
-    padding: 24px 0;
-    text-align: center;
+    margin: 0;
+    margin-bottom: 56px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5em;
 }
 .activity{
-    color: #fff;
-    padding: 24px 0;
+    background-color: #282828;
+}
+.time{
+    padding: 30px;
+    border-right: 0.25px solid #424242;
+    color: #e57a00;
+}
+
+.title{
+    padding: 30px;
+}
+.title h1{
     cursor: pointer;
 }
+
+.detail-content{
+    display: none;
+}
+.detail{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+.detail-content{
+    width:50%;
+	padding:40px;
+    position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background-color: #424242;
+}
+.close{
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.3);
+
+}
+
+.detail.active{
+    display: block;
+}
+.detail.active .detail-content{
+    display: block;
+}
+.detail.active .detail-content h2{
+    color: #fff;
+    font-size: 1.3125rem;
+}
+.detail.active .detail-content h3{
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    font-size: 0.875rem;
+}
+.detail.active .detail-content p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* author coide */
 .author-img{
     flex: 0 0 64px;
     max-height: 64px;
@@ -71,79 +134,29 @@
     padding: 24px 0;
     cursor: pointer;
 }
-
-
-.day-two{
-    padding: 80px 0;
+.author-row{
+    margin-right: 0;
 }
-.day-two h1{
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-    line-height: 1.35417em;
-    padding-left: 32px;
+.author-description{
+    max-height: 300px;
+    overflow-y: auto;
 }
-.day-two h3{
-    color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
-    font-family: "Merriweather", serif;
-    padding-bottom: 56px;
-    padding-left: 32px;
-}
-
-.author-description h1{
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-    line-height: 1.35417em;
-    padding-left: 0;
-}
-.author-description h3{
-    font-style: normal;
-    font-family: "Merriweather", serif;
-    padding-bottom: 0;
-    padding-left: 0;
-    font-size: 1rem;
-}
-
-.pope{
-    display: none;
-    z-index: 999999999999;
-    position: fixed;
-    background-color: #424242;
-    padding: 20px;
-   
-    
-}
-.pope h2{
-    color: #fff;
-    padding-bottom: 0px;
-    padding-left: 10px;
-    font-style: normal;
-}
-.pope h3{
-    padding-bottom: 0px;
-    padding-left: 10px;
-    font-style: normal;
-    font-size: 1rem;
-}
-.pope p{
-    padding: 0 10px;
-    color: #fff;
-}
-
-.close{
-    color: #bbbbbb;
-    font-size: 24px;
-    float: right;
+.author-para{
     padding: 10px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
 }
-
-.close:hover{
-    cursor: pointer;
+.author-data-img{
+    flex: 0 0 64px;
+    max-height: 64px;
+    margin-left: 15px;
+}
+.author-data-img img{
+    max-width: 80%;
+    max-height: 100%;
     border-radius: 50%;
-   background-color: rgb(255, 255, 255, 0.3);
+}
+.author-data{
+    margin-top: 5px;
+}
+.author-data p{
+    margin-bottom: 0;
 }
